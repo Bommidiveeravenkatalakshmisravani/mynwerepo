@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+      image: bommidisravani/mynwerepo:latest
+      ports:
+        - 8030:8030
+
