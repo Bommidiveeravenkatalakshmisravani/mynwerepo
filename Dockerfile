@@ -1,5 +1,5 @@
 FROM openjdk:8
 WORKDIR .
-COPY ./target/my-app-1.jar my-app-1.jar
+COPY ./target/myrepoapp-1.jar myrepoapp-1.jar
 EXPOSE 80
-ENTRYPOINT ["java","-jar","my-app-1.jar"] 
+ENTRYPOINT ["java","-jar","myrepoapp-1.jar"] 
