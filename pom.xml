@@ -36,7 +36,7 @@
 					 <mainClass>com.example.myhelloworld.Hello</mainClass>
 				 </manifest>
 			 </archive>
-		<configuration>
+		</configuration>
 			 
 
 	 </plugin>
