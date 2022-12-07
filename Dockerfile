@@ -1,4 +1,4 @@
-from openjdk:8
-workdir . 
-copy ./target/my-app-1.jar my-app-1.jar
-cmd ["java","-jar","my-app-1.jar"] 
+FROM openjdk:8
+COPY ./target/my-app-1.jar my-app-1.jar
+EXPOSE 80
+ENTRYPOINT ["java","-jar","my-app-1.jar"] 
