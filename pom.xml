@@ -42,6 +42,13 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>1.6</version>
                 <configuration>
+			 <archive>
+				 <manifest>
+					 <addClasspath>true</addClasspath>
+					 <classpathPrefix>lib</classpathPrefix>
+					 <mainClass>com.example.myhelloworld.Hello</mainClass>
+				 </manifest>
+			 </archive>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
                     <filters>
                         <filter>
@@ -73,22 +80,7 @@
                     </execution>
                 </executions>
             </plugin>
-		 <plugin>
-		 <groupId>org.apache.maven.plugins</groupId>
-		 <artifactId>maven-jar-plugin</artifactId>
-		 <version>3.3.0</version>
-		 <configuration>
-			 <archive>
-				 <manifest>
-					 <addClasspath>true</addClasspath>
-					 <classpathPrefix>lib</classpathPrefix>
-					 <mainClass>com.example.myhelloworld.Hello</mainClass>
-				 </manifest>
-			 </archive>
-		</configuration>
-			 
-
-	 </plugin>
+		
 	 <plugin>
 		 <groupId>org.codehaus.mojo</groupId>
 		 <artifactId>exec-maven-plugin</artifactId>
